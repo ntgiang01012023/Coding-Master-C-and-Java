@@ -6,7 +6,6 @@ const { exec } = require('child_process');
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
-
 app.use(express.json());
 
 app.post('/compileJava', (req, res) => {
@@ -40,7 +39,6 @@ app.post('/compileJava', (req, res) => {
 
 app.post('/compileC', (req, res) => {
   const { code } = req.body;
-
   // Lưu mã vào một file tạm thời
   const fileName = 'Main.c';
   const filePath = `${__dirname}/${fileName}`;
@@ -67,7 +65,6 @@ app.post('/compileC', (req, res) => {
         res.status(500).json({ error: 'Lỗi thực thi tệp tin' });
         return;
       }
-
       // Gửi kết quả về client
       res.json({ result: execStdout });
     });

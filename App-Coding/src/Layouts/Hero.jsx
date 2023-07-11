@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section className='w-full h-[820px] mt-[100px] pt-[150px]'>
             <div className="wrapper flex">
-                <div className="w-[615px]">
+                <div className="w-[615px] z-[10]">
                     <h3 className='text-[15px] text-gradientgreencolor2 uppercase mb-[20px]'>Built on website. Powered by You.</h3>
                     <h1 className='text-[68px] font-normal mb-[20px]'>Learn to Code</h1>
                     <h2 className='text-[18px] text-neutral-grey2-100 font-normal mb-[40px]'>With the world largest web developer site. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.</h2>

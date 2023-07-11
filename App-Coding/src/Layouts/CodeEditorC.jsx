@@ -24,8 +24,8 @@ const CodeEditorC = () => {
   
 
   return (
-    <section className='w-full h-[130vh] py-[50px] border-2 border-indigo-600'>
-      <div className="wrapper">
+    <section className='w-full h-[100vh] py-[50px]'>
+      <div className="wrapper flex flex-col justify-center items-center">
         <h2 className="text-[40px] text-center">C language free code editor</h2>
         <p className='text-[18px] text-center text-neutral-grey2-100 mb-[50px]'>With our online code editor, you can edit the code and see the results in your browser</p>
         <div className="flex justify-center">
